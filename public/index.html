@@ -1,11 +1,141 @@
-<html>
-  <head>
-    <title>
-      Hello from Fly
-    </title>
-  </head>
-  <body>
-    <h1>Hello from Fly with a static web site</h1>
-      <p>Or <a href="goodbye.html">goodbye.</a></p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataExpress.Dev</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn ease 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Include Flowbite icons -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.8.0/dist/js/flowbite.min.js"></script>
+
+    <!-- Navbar/Header with User Details -->
+    <nav class="bg-gradient-to-r from-red-400 to-blue-500 p-4 text-white shadow-md sticky top-0 z-50 fade-in">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">DataExpress.Dev</h1>
+            <div class="space-x-4">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#features" class="text-white">Features</a>
+                <a href="#about" class="text-white">About</a>
+                <a href="#use-cases" class="text-white">Use Cases</a>
+                <a href="#testimonials" class="text-white">Testimonials</a>
+                <a href="#contact" class="text-white">Contact</a>
+                <a href="#inbox-narrator" class="text-white">Inbox Narrator</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="bg-gradient-to-r from-purple-400 to-blue-500 text-white flex items-center justify-center min-h-screen fade-in">
+        <div class="container mx-auto text-left flex flex-wrap">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-5xl font-bold mb-4">Your own data. Any GPT.</h2>
+                <p class="text-2xl mb-4">Leverage cutting-edge technologies to transform your data. With
+                    DataExpress.Dev, you have the power to harness the potential of GPT models and integrate them
+                    seamlessly into your workflow.</p>
+                <a href="#features" class="text-xl bg-white text-gray-800 py-2 px-4 rounded">Explore Features</a>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1557683316-973673baf926" alt="Hero Image"
+                    class="w-full h-auto rounded mb-4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="p-5 bg-white fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Innovative Features</h2>
+            <p class="text-xl mb-4 text-center">Our platform offers a wide range of features designed to enhance your
+                data processing and analysis capabilities. Explore some of the key features below:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Cards -->
+                <div class="p-4 bg-white rounded shadow text-center transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926" alt="Google Drive"
+                        class="w-full h-auto rounded mb-4">
+                    <h3 class="text-2xl font-semibold">Google Drive Integration</h3>
+                    <p>Take your drive to GPT instantly without any setup. Easily access and manage your files from
+                        anywhere.</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow text-center transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6" alt="ChatGPT"
+                        class="w-full h-auto rounded mb-4">
+                    <h3 class="text-2xl font-semibold">ChatGPT & AI Assistance</h3>
+                    <p>Enhance your communication with AI-powered chat assistance. Get real-time support and insights.</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow text-center transform hover:scale-105 transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb" alt="Cloud Computing"
+                        class="w-full h-auto rounded mb-4">
+                    <h3 class="text-2xl font-semibold">One-Click Static-Site-Generation</h3>
+                    <p>Scale your business with your own social network. Create stunning websites with a single click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about"
+        class="p-5 bg-gradient-to-r from-purple-400 to-blue-500 text-white flex items-center justify-center min-h-screen fade-in">
+        <div class="container mx-auto text-right flex flex-wrap-reverse">
+            <div class="w-full md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1557683316-973673baf926" alt="About Us Image"
+                    class="w-full h-auto rounded mb-4">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-5xl font-bold mb-4">About Us</h2>
+                <p class="text-2xl mb-4">DataExpress.Dev is committed to empowering businesses and individuals with
+                    cutting-edge data solutions. Our mission is to make data processing and analysis accessible to
+                    everyone, regardless of their technical expertise. We believe in innovation, collaboration, and
+                    continuous improvement. Join us on our journey to redefine the future of data.</p>
+                <a href="#use-cases" class="text-xl bg-white text-gray-800 py-2 px-4 rounded">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-5 bg-white fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Join the waitlist</h2>
+            <p class="text-xl mb-4">Be the first to access our latest features and updates. Sign up for our waitlist and
+                enjoy free storage and compute. Don't miss out on this exclusive opportunity!</p>
+            <form>
+                <input type="text" placeholder="Email" class="p-2 mb-2 w-1/2 rounded border">
+                <button type="submit"
+                    class="text-xl bg-gradient-to-r from-red-400 to-blue-500 text-white py-2 px-4 rounded">Count me
+                    in!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-400 to-blue-500 p-4 text-white text-center fade-in">
+        <p>&copy; 2023 DataExpress.Dev</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <!-- Tailwind CSS Transition Utilities -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</body>
+
 </html>
